@@ -38,7 +38,7 @@ theme:
           bug: fontawesome/solid/robot
           example: fontawesome/solid/flask
           quote: fontawesome/solid/quote-left
-repo_url: https://git.autodesk.com/caverlc/my-docs
+            #repo_url: https://github.com/coreycaverly/personal-site
 extra: 
   generator: false
 #repo_name: 'Send us a PR'
