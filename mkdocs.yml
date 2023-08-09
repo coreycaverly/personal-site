@@ -1,0 +1,93 @@
+site_name: Corey's Docs
+docs_dir: docs
+theme:
+    name: material
+    custom_dir: overrides
+    #name: bootstrap4
+    palette:
+      - media: "(prefers-color-scheme: dark)"
+        scheme: default
+        primary: grey
+        accent: grey
+        toggle:
+          icon: material/weather-night
+      - media: "(prefers-color-scheme: light)"
+        scheme: light
+        primary: blue
+        accent: blue
+        toggle:
+          icon: material/weather-sunny
+    features:
+        - toc.integrate
+        - navigation.instant
+        - content.code.annotate
+    favicon: img/favicon.ico
+    logo: img/favicon.ico
+    icon:
+        repo: fontawesome/brands/github
+        admonition:
+          note: fontawesome/solid/note-sticky
+          abstract: fontawesome/solid/book
+          info: fontawesome/solid/circle-info
+          tip: fontawesome/solid/bullhorn
+          success: fontawesome/solid/check
+          question: fontawesome/solid/circle-question
+          warning: fontawesome/solid/triangle-exclamation
+          failure: fontawesome/solid/bomb
+          danger: fontawesome/solid/skull
+          bug: fontawesome/solid/robot
+          example: fontawesome/solid/flask
+          quote: fontawesome/solid/quote-left
+repo_url: https://git.autodesk.com/caverlc/my-docs
+extra: 
+  generator: false
+#repo_name: 'Send us a PR'
+repo_name: 'Github'
+edit_uri: 'edit/main/docs'
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascript/tablesort.js
+    #  - javascript/mermaid.min.js
+markdown_extensions:
+    - attr_list:
+    - md_in_html:
+    - abbr:
+    - pymdownx.details:
+    - admonition:
+    - footnotes:
+    - pymdownx.caret:
+    - pymdownx.tilde:
+    - pymdownx.keys:
+    - pymdownx.snippets:
+    - pymdownx.inlinehilite:
+    - pymdownx.details:
+    - pymdownx.highlight:
+          anchor_linenums: True
+    - toc:
+          permalink: False
+    - pymdownx.snippets:
+          base_path: docs
+    - pymdownx.emoji:
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.tabbed:
+          alternate_style: True
+    - pymdownx.superfences:
+    - pymdownx.tasklist:
+          custom_checkbox: True
+    - tables:
+    - def_list:
+plugins:
+      - search
+      - git-revision-date-localized:
+          type: date
+          fallback_to_build_date: false
+          exclude:
+            - index.md
+#      - mermaid2:
+#          version: 8.9.1
+
+nav:
+    - Welcome: index.md
